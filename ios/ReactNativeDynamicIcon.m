@@ -18,18 +18,18 @@ RCT_EXPORT_METHOD(setIconName:(NSString *)iconName) {
     RCTLog(@"Alternate icons are not supported");
     return;
   }
-
-  // Original icon
+  
   if ([iconName isEqualToString:kDefaultName]) {
-      [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError * _Nullable error) {
-          RCTLog(@"%@", [error description]);
-      }];
-  }
-
-  // Custom icon
-  [[UIApplication sharedApplication] setAlternateIconName:iconName completionHandler:^(NSError * _Nullable error) {
+    // Original icon
+    [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError * _Nullable error) {
       RCTLog(@"%@", [error description]);
-  }];
+    }];
+  } else {
+    // Custom icon
+    [[UIApplication sharedApplication] setAlternateIconName:iconName completionHandler:^(NSError * _Nullable error) {
+      RCTLog(@"%@", [error description]);
+    }];
+  }
 }
 
 @end
