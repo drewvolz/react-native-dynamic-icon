@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Change your iOS react native app icon.",
   "main": "index.js",
   "scripts": {
