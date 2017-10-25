@@ -21,6 +21,8 @@ Defining the icons for your app is done with a very specific set of property lis
 
 Notes:
 * You can rename `icon_type_1` and `YourImageName`
+  - `icon_type_1` is what you pass to `ReactNativeDynamicIcon.setIconName`
+  - `YourImageName` is the name of your image file
 * Add more entries under `CFBundleAlternateIcons` if you want more than one alternate icon.
 * Note: Do not put the @2x or @3x parts into your plist, and don’t add the .png either.
 
@@ -59,10 +61,10 @@ Notes:
 import ReactNativeDynamicIcon from 'react-native-dynamic-icon'
 
 // Setting an alternate icon
-ReactNativeDynamicIcon.setIconName("Foobar")
+ReactNativeDynamicIcon.setIconName("icon_type_foobar")
 
 // Setting default
-ReactNativeDynamicIcon.setIconName("Default")
+ReactNativeDynamicIcon.setIconName("__default__")
 ```
 
 ## Todo
@@ -76,7 +78,7 @@ ReactNativeDynamicIcon.setIconName("Default")
 ##### Apple's Docs
 
 Method | What it does
---|--
+---|---
 [`supportsAlternateIcons`](https://developer.apple.com/documentation/uikit/uiapplication/2806815-supportsalternateicons?language=objc) | A Boolean value indicating whether the app is allowed to change its icon.
 [`alternateIconName`](https://developer.apple.com/documentation/uikit/uiapplication/2806808-alternateiconname?language=objc) | The name of the icon being displayed for the app.
 [`setAlternateIconName`](https://developer.apple.com/documentation/uikit/uiapplication/2806818-setalternateiconname?language=objc) | Changes the app's icon.
@@ -84,6 +86,6 @@ Method | What it does
 ##### Other sites
 
 Source | What's to learn
---|--
+---|---
 [hackingwithswift.com](https://www.hackingwithswift.com/example-code/uikit/how-to-change-your-app-icon-dynamically-with-setalternateiconname) |  How to change your app icon dynamically
 [steventroughtonsmith](https://github.com/steventroughtonsmith/AlternateIconTest) | AlternateIconTest github example
