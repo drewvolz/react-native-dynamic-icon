@@ -12,6 +12,6 @@
   "author": "Drew Volz",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "0.45.1"
+    "react-native": ">=0.45.1"
   }
 }
