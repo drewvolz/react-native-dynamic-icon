@@ -1,0 +1,17 @@
+{
+  "name": "react-native-dynamic-icon",
+  "version": "1.0.0",
+  "description": "Change your iOS react native app icon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Drew Volz",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "0.45.1"
+  }
+}
