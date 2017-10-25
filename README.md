@@ -46,7 +46,7 @@ Notes:
 
 ## 3. Installation
 
-`$ npm install github:drewvolz/react-native-dynamic-icon`
+`$ npm install react-native-dynamic-icon`
 ### (a) Mostly automatic installation
 `$ react-native link react-native-dynamic-icon`
 ### (b) Manual installation
