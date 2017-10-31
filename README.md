@@ -2,6 +2,8 @@
 
 Change your iOS react native app icon.
 
+## Deprecated. Use https://github.com/kamsteegsoftware/react-native-alternate-icons instead.
+
 _The following readme is mostly background info copied from [hackingwithswift.com](https://www.hackingwithswift.com/example-code/uikit/how-to-change-your-app-icon-dynamically-with-setalternateiconname). Check their site out!_
 
 ### 1. Add alternate icons to your Xcode project
